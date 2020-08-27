@@ -1,2 +1,2 @@
 # DailyVegun
-Daily Vegan Application for Android
+Daily Vegun Application for Android
