@@ -31,7 +31,7 @@
         app:layout_constraintVertical_bias="0.953" />
 
     <ImageView
-        android:id="@+id/squre_logo"
+        android:id="@+id/square_logo"
         android:layout_width="138dp"
         android:layout_height="127dp"
         app:layout_constraintBottom_toBottomOf="@+id/circled_grass"

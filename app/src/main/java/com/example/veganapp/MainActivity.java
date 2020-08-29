@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.ClipData;
 import android.content.Context;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -27,10 +28,41 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     ListView listView;
-
-    int images[] = {R.drawable.ic_audio, R.drawable.ic_sun, R.drawable.ic_android};
-    String names[] = {"audio", "sun", "android"};
-    String desc[] = {"This is apple", "This is sun", "This is android"};
+/*
+    int images[] = {R.drawable.product_1, R.drawable.product_2, R.drawable.product_3, R.drawable.product_4,
+    R.drawable.product_5, R.drawable.product_6, R.drawable.product_7, R.drawable.product_8,
+    R.drawable.product_9, R.drawable.product_10,R.drawable.product_11,R.drawable.product_12,
+            R.drawable.product_13, R.drawable.product_14, R.drawable.product_15,R.drawable.product_16,
+            R.drawable.product_17, R.drawable.product_18, R.drawable.product_19, R.drawable.product_20,
+            R.drawable.product_21, R.drawable.product_22, R.drawable.product_23, R.drawable.product_24,
+            R.drawable.product_26, R.drawable.product_27};
+    String names[] = {"[오뚜기] 채황", "[삼양] 채식라면", "[농심] 야채라면", "[삼양] 불타는 고추라면",
+    "[풀무원] 정면","[팔도] 비빔장", "[오뚜기] 피자소스", "[CJ제일제당] 사과듬뿍 비빔장",
+    "[백설] 매콤한 돼지 불고기 양념", "[샘표] 비빔국수","[대림사조] 채담만두", "[Lembeke] 로투스 비스코프",
+    "[롯데] 꼬깔콘 고소한맛", "[오리온] 통크 피넛", "[노브랜드] 감자칩 오리지널","[네슬레] 프루팁스",
+    "[삼육] 김치볶음밥", "[피코크] 구운사리면", "[매일유업] 매일두유", "[매일유업] 매일두유 식이섬유",
+    "[매일유업] 매일두유 초콜릿","[매일유업] 아몬드 브리즈 오리지널", "[매일유업] 아몬드 브리즈 언스위트", "[매일유업] 아몬드 브리즈 바나나",
+    "[매일유업] 아몬드 브리즈 초콜릿", "[키토제니] 아몬드 블랙티", "[노브랜드] 무농약 현미 스틱 미숫가루"};
+    String desc[] = {"라면" , "라면" , "라면" , "라면",
+     "라면", "양념" , "양념" , "양념" ,
+     "양념" , "간편식", "간편식", "과자",
+     "과자", "과자", "과자", "과자",
+     "간편식", "간편식", "음료", "음료",
+     "음료", "음료", "음료", "음료",
+     "음료", "음료", "음료"};
+*/
+    int images[] ={R.drawable.product_1, R.drawable.product_2, R.drawable.product_3, R.drawable.product_4,
+        R.drawable.product_5, R.drawable.product_6, R.drawable.product_7, R.drawable.product_8,
+        R.drawable.product_9, R.drawable.product_10,R.drawable.product_11,R.drawable.product_12,
+        R.drawable.product_13, R.drawable.product_14};
+    String names[] ={"[오뚜기] 채황", "[삼양] 채식라면", "[농심] 야채라면", "[삼양] 불타는 고추라면",
+            "[풀무원] 정면", "[팔도] 비빔장", "[오뚜기] 피자소스", "[CJ제일제당] 사과듬뿍 비빔장",
+            "[백설] 매콤한 돼지 불고기 양념", "[샘표] 비빔국수","[대림사조] 채담만두", "[Lembeke] 로투스 비스코프",
+            "[롯데] 꼬깔콘 고소한맛", "[오리온] 통크 피넛"};
+    String desc[]={"라면" , "라면" , "라면" , "라면",
+            "라면", "양념" , "양념" , "양념",
+            "양념" , "간편식", "간편식", "과자",
+            "과자", "과자"};
 
     List<ItemsModel> listItems = new ArrayList<>();
 
@@ -40,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         listView = findViewById(R.id.listview);
 
