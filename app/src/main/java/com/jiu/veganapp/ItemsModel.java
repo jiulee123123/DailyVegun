@@ -1,4 +1,4 @@
-package com.example.veganapp;
+package com.jiu.veganapp;
 
 public class ItemsModel {
     private String name;

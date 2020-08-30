@@ -1,4 +1,4 @@
-package com.example.veganapp;
+package com.jiu.veganapp;
 
 import org.junit.Test;
 

@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name"> 제품 검색 </string>
+    <string name="app_name"> 생활 채식 </string>
+    <string name="app_label"> 제품 검색</string>
 </resources>

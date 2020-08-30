@@ -8,27 +8,28 @@
 
     <ImageView
         android:id="@+id/circled_grass"
-        android:layout_width="320dp"
-        android:layout_height="648dp"
+        android:layout_width="258dp"
+        android:layout_height="579dp"
+        android:src="@drawable/loading_circledgrass"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.493"
-        app:srcCompat="@drawable/loading_circledgrass" />
+        app:layout_constraintVertical_bias="0.296" />
 
     <TextView
         android:id="@+id/developed_by"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Developed by OOKETMON"
-        app:layout_constraintBottom_toBottomOf="@+id/circled_grass"
-        app:layout_constraintEnd_toEndOf="@+id/circled_grass"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="@+id/circled_grass"
-        app:layout_constraintTop_toTopOf="@+id/circled_grass"
-        app:layout_constraintVertical_bias="0.953" />
+        android:text="ⓒ 2020. OOKETMON all rights reserved"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circled_grass"
+        app:layout_constraintVertical_bias="0.465" />
 
     <ImageView
         android:id="@+id/square_logo"
@@ -39,5 +40,6 @@
         app:layout_constraintStart_toStartOf="@+id/circled_grass"
         app:layout_constraintTop_toTopOf="@+id/circled_grass"
         app:layout_constraintVertical_bias="0.523"
-        app:srcCompat="@drawable/square_logo" />
+        android:src="@drawable/square_logo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

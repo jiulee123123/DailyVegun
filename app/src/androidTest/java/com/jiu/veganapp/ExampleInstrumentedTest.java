@@ -1,4 +1,4 @@
-package com.example.veganapp;
+package com.jiu.veganapp;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.example.veganapp", appContext.getPackageName());
+        assertEquals("com.jiu.veganapp", appContext.getPackageName());
     }
 }
