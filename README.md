@@ -1,5 +1,5 @@
-# DailyVegun
-Daily Vegun Application for Android
+# DailyVegan
+Daily Vegan Application for Android
 
 ## 생활채식
   + 안드로이드 어플리케이션 입니다.
